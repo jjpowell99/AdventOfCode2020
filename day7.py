@@ -37,7 +37,7 @@ def func(rules, line):
     edges = val.split(",")
     edges = list(filter(lambda a : "no other bags" not in a, edges))
     edges = list(map(lambda a : a.strip(), edges))
-    edges = list(map(lambda a : {a[a.index(" ") + 1 : ] : int(a[:a.index(" ")])}, edges))
+    edges = list(map(lambda a : a[a.index(" ") + 1 : ], edges))
     edges = list(map(lambda a : a.replace("bags", "bag"), edges))
     if key in rules:
         rules[key] += (edges)

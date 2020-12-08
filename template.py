@@ -1,5 +1,5 @@
 def main():
-    input_file = "input/day1.txt"
+    input_file = "input/test.txt"
     with open(input_file, 'r') as data:
         lines = data.readlines()
         val = 0
